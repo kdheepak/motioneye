@@ -465,7 +465,7 @@ function ajax(method, url, data, callback, error, timeout) {
         processData: processData,
         error: error || function (request, options, error) {
             if (request.status == 403) {
-                return onResponse(request.responseJSON);
+                return onResponse({prompt: true, error: "unauthorized"});
             }
 
             showErrorMessage();
