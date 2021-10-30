@@ -1,4 +1,4 @@
-FROM multiarch/debian-debootstrap:armhf-stretch
+FROM resin/rpi-raspbian:stretch
 LABEL maintainer="Marcus Klein <himself@kleini.org>"
 
 ARG BUILD_DATE
